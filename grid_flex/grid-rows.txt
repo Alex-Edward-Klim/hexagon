@@ -1,0 +1,10 @@
+css grid odd even rows site:stackoverflow.com
+
+https://stackoverflow.com/questions/43115822/can-i-make-a-css-grid-with-dynamic-number-of-rows-or-columns
+
+https://stackoverflow.com/questions/56898372/css-grid-layout-grid-row-gap-every-2-rows
+
+grid-template-columns: repeat(auto-fill, 200px);
+grid-template-rows: repeat(auto-fill, 200px);
+grid-auto-columns: auto;
+grid-auto-rows: 1fr;

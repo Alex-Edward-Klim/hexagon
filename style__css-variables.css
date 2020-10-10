@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.hexagon__container {
+
+  /* VARIABLES */
+
+  /* SET ONLY THESE TWO (image width and height) */
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /* Image proportions should be 1:2 */
+  --hexagon-image__width: 200px;
+  --hexagon-image__height: 400px;
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  /* AND OPTIONALLY THESE TWO (horizontal and vertical space between hexagons) */
+  --hexagon-horizontal-space: 20px;
+  --hexagon-vertical-space: 40px;
+  /* Vertical space should be 2 times more than Horizontal space! */
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+  /* OTHER VARIABLES WILL BE COMPUTED AUTOMATICALLY WITH JS*/
+  /* --hexagon-element-height: 116px; */
+  --hexagon-element__height: 0px;
+  /* --hexagon-outer-wrapper__margin-top: -84px */
+  --hexagon-outer-wrapper__margin-top: 0px;
+
+  /* --hexagon-container__padding-top: 58px; */
+  --hexagon-container__padding-top: 0px;
+
+  /* --hexagon-wrapper__margin-top: -58px; */
+  --hexagon-wrapper__margin-top: 0px;
+
+  /* --hexagon-wrapper__height: 232px; */
+  --hexagon-wrapper__height: 0px;
+  /* VARIABLES */
+
+  text-align: center;
+
+  /* padding-top: 58px; */
+  padding-top: var(--hexagon-container__padding-top);
+
+  /* letter-spacing: 2em;
+  line-height: 4em; */
+  /* letter-spacing: 20px;
+  line-height: 40px; */
+  letter-spacing: var(--hexagon-horizontal-space);
+  line-height: var(--hexagon-vertical-space);
+  /* line-height is 2 times more than letter-spacing */
+
+  user-select: none;
+}
+.hexagon__element {
+  display: inline-block;
+  /* height: 116px; */
+  height: var(--hexagon-element__height);
+  width: var(--hexagon-image__width);
+}
+
+.hexagon__hidden-element {
+  display: inline-block;
+  height: var(--hexagon-element__height);
+  width: var(--hexagon-image__width);
+  visibility: hidden;
+}
+
+.hexagon__display-none {
+  display: none;
+}
+
+.hexagon__wrapper {
+  width: var(--hexagon-image__width);
+  height: var(--hexagon-wrapper__height);
+  margin-top: var(--hexagon-wrapper__margin-top);
+
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.hexagon__wrapper:hover {
+  transform: scale(1.1);
+}
+
+.hexagon__outer-wrapper {
+  width: var(--hexagon-image__width);
+  height: var(--hexagon-image__height);
+
+  /* margin-top: -84px; */
+  margin-top: var(--hexagon-outer-wrapper__margin-top);
+
+  transform: rotate(60deg);
+  overflow: hidden;
+}
+
+.hexagon__inner-wrapper {
+  width: var(--hexagon-image__width);
+  height: var(--hexagon-image__height);
+
+  transform: rotate(60deg);
+  overflow: hidden;
+}
+
+.hexagon__image {
+  width: var(--hexagon-image__width);
+  height: var(--hexagon-image__height);
+
+  transform: rotate(-120deg);
+}
+
+.hexagon__picture {
+  width: var(--hexagon-image__width);
+  height: var(--hexagon-image__height);
+
+  /* Change image position (higher or lower) inside hexagon if necessary */
+  transform: translateY(0px);
+}

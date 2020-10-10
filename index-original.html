@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .hexagon__container {
+      text-align: center;
+
+      border: 1px solid black;
+    }
+
+    .hexagon__element {
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+
+      background-color: lightblue;
+    }
+
+    .hexagon__hidden-element {
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      visibility: hidden;
+    }
+
+    .hexagon__display-none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hexagon__container">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    <div class="hexagon__element"></div>
+    <br class="hexagon__br hexagon__display-none">
+    
+    <div class="hexagon__hidden-element hexagon__display-none"></div>
+  </div>
+
+  <script src="./script__align-hexagon-elements.js"></script>
+
+</body>
+</html>

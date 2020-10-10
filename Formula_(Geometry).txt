@@ -1,0 +1,41 @@
+height: 400px;
+
+
+
+.hexagon__element
+.hexagon__hidden-element
+height: 116px;
+= 58 * 2
+
+.hexagon__wrapper
+margin-top: -58px;
+= 116 / 2
+Math.floor()
+
+
+.hexagon__outer-wrapper
+margin-top: -84px;
+(400 / 4.76190476 = 84px)
+
+400 - 84*2 = 232
+
+?
+400 - 116 - 200 = 84
+
+
+
+"transform" property uses 60deg
+so there are 2 (TWO) equal angles of 30deg (90deg - 60deg = 30deg)
+
+ x	width
+sin30	sqrt(3)/2
+
+ x	200
+1/2	√3/2
+
+x = 
+Math.ceil( (width/2) / (Math.sqrt(3)/2) )
+
+
+.hexagon__container
+padding-top: 58px;

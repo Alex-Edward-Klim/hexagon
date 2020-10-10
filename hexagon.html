@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    /* * {
+      box-sizing: border-box;
+    } */
+
+    body {
+      padding: 300px;
+    }
+
+    .hexagon__element {
+      display: inline-block;
+      width: 200px;
+      height: 116px;
+      border: 1px solid black;
+
+      transition: transform 1s;
+    }
+    .hexagon__element:hover {
+      transform: scale(1.1);
+    }
+
+    .hexagon__wrapper {
+      width: 200px;
+      height: 232px;
+      background-color: lightblue;
+
+      overflow: hidden;
+
+
+      margin-top: -58px;
+
+
+      
+    }
+    /* .hexagon__wrapper:hover {
+      transform: scale(1.1);
+    } */
+
+    .hexagon__outer-wrapper {
+      width: 200px;
+      height: 400px;
+
+      transform: rotate(60deg);
+
+      overflow: hidden;
+
+      /* background-color: rgba(0, 0, 0, 0.5); */
+
+
+
+
+      margin-top: -84px;
+    }
+
+    .hexagon__inner-wrapper {
+      width: 200px;
+      height: 400px;
+
+      transform: rotate(60deg);
+
+      overflow: hidden;
+
+      /* background-color: rgba(0, 0, 0, 0.5); */
+    }
+
+    .hexagon__image {
+      width: 200px;
+      height: 400px;
+      /* border: 1px solid black; */
+
+      background-image: url('./image.jpg');
+
+
+      background-size: cover;
+
+      /* background-size:contain; */
+
+      background-position: center;
+
+      /* background-repeat: no-repeat; */
+
+      transform: rotate(-120deg);
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="hexagon__element">
+
+  <div class="hexagon__wrapper">
+
+  <div class="hexagon__outer-wrapper">
+    <div class="hexagon__inner-wrapper">
+      <div class="hexagon__image"></div>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+
+
+</body>
+</html>
